@@ -1,33 +1,9 @@
 import { useRef } from "react";
+import { items } from '../constants'
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { styles } from "../styles";
 
-const items = [
-  {
-    id: 1,
-    title: "React E-Commerce",
-    img: "",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-  },
-  {
-    id: 2,
-    title: "Travel web",
-    img: "",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo",
-  },
-  {
-    id: 3,
-    title: "Shop App",
-    img: "",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-  },
-  {
-    id: 4,
-    title: "Music App",
-    img: "",
-    desc: "Lorem ipsum id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-  },
-];
+
 
 const Single = ({ item }) => {
   const ref = useRef();
@@ -40,15 +16,17 @@ const Single = ({ item }) => {
 
   return (
     <section >
-      <div className="flex items-center justify-center w-100 h-100 overflow-hidden">
-        <div className="wrapper">
-          <div className="imageContainer" ref={ref}>
-            <img src={item.img} alt="" />
+      <div className="flex items-center justify-center size-full overflow-hidden">
+        <div className="max-w-[900px] h-full m-auto flex items-center justify-center gap-5">
+          <div className="h-[50%] sm:w-full sm:max-h-[300px]" ref={ref}>
+            <img className="w-full h-full object-cover sm:object-contain" src={item.img} alt="" />
           </div>
-          <motion.div className="textContainer" style={{y}}>
+          <motion.div className="flex flex-col gap-7" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See Demo</button>
+            <button className=" bg-[#915EFF] border-none rounded-lg p-4 w-[100px] cursor-pointer">
+              See Demo
+            </button>
           </motion.div>
         </div>
       </div>
@@ -71,8 +49,10 @@ const Portfolio = () => {
 
   return (
     <div className="relative" ref={ref}>
-      <div className={`${styles.heroSubText} sticky t-0 l-0 pt-5 text-center`}>
+      <div className={`${styles.heroSubText} sticky top-0 left-0 pt-5 text-center text-[36px] sm:text-[24px]`}>
+
         <h1>Featured Works</h1>
+
         <motion.div style={{ scaleX }} className="h-2 bg-white-200"></motion.div>
       </div>
       {items.map((item) => (
