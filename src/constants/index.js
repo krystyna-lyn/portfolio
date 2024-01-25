@@ -26,8 +26,8 @@ import {
       title: "About",
     },
     {
-      id: "work",
-      title: "Work",
+      id: "works",
+      title: "Works",
     },
     {
       id: "contact",
@@ -38,40 +38,35 @@ import {
   const items = [
     {
       id: 1,
-      title: "React E-Commerce",
+      title: "Music App",
       img: "/portfolio/project-1.png",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+      desc: "created using HTML, CSS, JavaScript",
     },
     {
       id: 2,
-      title: "Travel web",
+      title: "E-Commerce Shop Website",
       img: "/portfolio/project-2.png",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo",
+      desc: "created using HTML, CSS, JavaScript",
     },
     {
       id: 3,
-      title: "HHHKKKK",
-      img: "/portfolio/project-3.png",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+      title: "E-Commerce Shop Website",
+      img: "/portfolio/project-4.png",
+      desc: "created using Angular",
     },
     {
       id: 4,
-      title: "Music App",
-      img: "/portfolio/project-4.png",
-      desc: "Lorem ipsum id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    },
+      title: "WaveTube Video App",
+      img: "/portfolio/project-5.png",
+      desc: "created using React,",
+      },
     {
       id: 5,
-      title: "Music App",
-      img: "/portfolio/project-5.png",
-      desc: "Lorem ipsum id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    },
-    {
-      id: 6,
-      title: "Music App",
+      title: "Coffee Shop Website",
       img: "/portfolio/project-6.png",
-      desc: "Lorem ipsum id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+      desc: "created using PHP",
     },
+   
   ];
   
   const services = [

@@ -15,16 +15,16 @@ const Single = ({ item }) => {
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
   return (
-    <section >
+    <section id="works">
       <div className="flex items-center justify-center size-full overflow-hidden">
-        <div className="max-w-[900px] h-full m-auto flex items-center justify-center gap-5">
-          <div className="h-[50%] sm:w-full sm:max-h-[300px]" ref={ref}>
+        <div className="max-w-[1100px] h-full m-auto flex items-center justify-center gap-12">
+          <div className="flex-1 h-[50%] sm:w-full sm:max-h-[300px]" ref={ref}>
             <img className="w-full h-full object-cover sm:object-contain" src={item.img} alt="" />
           </div>
-          <motion.div className="flex flex-col gap-7" style={{ y }}>
+          <motion.div className="flex-1 flex flex-col gap-5" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button className=" bg-[#915EFF] border-none rounded-lg p-4 w-[100px] cursor-pointer">
+            <button className="bg-[#915EFF] border-none rounded-lg p-2 w-[200px] cursor-pointer">
               See Demo
             </button>
           </motion.div>
@@ -55,9 +55,12 @@ const Portfolio = () => {
 
         <motion.div style={{ scaleX }} className="h-2 bg-white-200"></motion.div>
       </div>
-      {items.map((item) => (
-        <Single item={item} key={item.id} />
-      ))}
+      {/* Use flex classes to create a vertical layout */}
+      <div className="flex flex-col gap-12 items-center">
+        {items.map((item) => (
+          <Single item={item} key={item.id} />
+        ))}
+      </div>
     </div>
   );
 };

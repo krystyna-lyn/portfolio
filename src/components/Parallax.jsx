@@ -14,7 +14,7 @@ const Parallax = ({ type }) => {
 
   return (
     <div
-      className="parallax"
+      className="w-full h-full relative flex items-center justify-center overflow-hidden "
       ref={ref}
       style={{
         background:
@@ -26,17 +26,7 @@ const Parallax = ({ type }) => {
       <motion.h1 style={{ y: yText }}>
         {type === "services" ? "What I Do?" : "What I Did?"}
       </motion.h1>
-      <motion.div className="mountains"></motion.div>
-      <motion.div
-        className="planets"
-        style={{
-          y: yBg,
-          backgroundImage: `url(${
-            type === "services" ? "/planets.png" : "/sun.png"
-          })`,
-        }}
-      ></motion.div>
-      <motion.div style={{ x: yBg }} className="stars"></motion.div>
+      
     </div>
   );
 };

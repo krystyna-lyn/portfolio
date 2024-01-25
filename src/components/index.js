@@ -16,11 +16,12 @@ export {
   About,
   Parallax,
   Portfolio,
+  Contact,
   Tech,
   Experience,
   Works,
+
   Feedbacks,
-  Contact,
   EarthCanvas, 
   BallCanvas, 
   ComputersCanvas, 
