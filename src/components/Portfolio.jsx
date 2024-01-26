@@ -15,7 +15,7 @@ const Single = ({ item }) => {
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
   return (
-    <section id="works">
+    <section id="works" className="mt-32">
       <div className="flex items-center justify-center size-full overflow-hidden">
         <div className="max-w-[1100px] h-full m-auto flex items-center justify-center gap-12">
           <div className="flex-1 h-[50%] sm:w-full sm:max-h-[300px]" ref={ref}>
