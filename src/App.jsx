@@ -11,11 +11,12 @@ const App = () => {
           <Navbar />
           <About />
         </div>
+        <Tech />
         <section>
           <Parallax type="portfolio" />
         </section>
         <Portfolio />
-        <Tech />
+       
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />
