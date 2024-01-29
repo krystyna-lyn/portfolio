@@ -25,7 +25,7 @@ const Single = ({ item }) => {
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
             <button className="bg-[#915EFF] border-none rounded-lg p-2 w-[200px] cursor-pointer">
-              See Demo
+              <a href={item.url} target="_blank">See Demo</a>
             </button>
           </motion.div>
         </div>
