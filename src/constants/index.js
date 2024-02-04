@@ -1,22 +1,12 @@
 import {
-  mobile,
-  web,
   javascript,
   typescript,
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   git,
   figma,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
 } from "../assets";
 
@@ -111,16 +101,6 @@ const items = [
 
 ];
 
-const services = [
-  {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
-    title: "Web Designer",
-    icon: mobile,
-  }
-];
 
 const technologies = [
   {
@@ -156,10 +136,6 @@ const technologies = [
     name: "git",
     icon: git,
   },
-  {
-    name: "figma",
-    icon: figma,
-  },
 
 ];
 
@@ -167,4 +143,4 @@ const technologies = [
 
 
 
-export { services, items, technologies };
+export { items, technologies };
