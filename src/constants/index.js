@@ -43,10 +43,10 @@ const items = [
   },
   {
     id: 3,
-    title: "E-Commerce Shop Website",
+    title: "E-Commerce Website",
     img: "/portfolio/project-4.png",
     desc: "created using Angular",
-    url: "#"
+    url: "https://github.com/krystyna-lyn/nb-ks-shop"
   },
 
   {
@@ -61,22 +61,9 @@ const items = [
     title: "Coffee Shop Website",
     img: "/portfolio/project-6.png",
     desc: "created using PHP",
-    url: "#"
+    url: "https://github.com/krystyna-lyn/coffeeshop"
   },
-  {
-    id: 6,
-    title: "Coffee Landing Page",
-    img: "/portfolio/project-7.png",
-    desc: "created using HTML, CSS, JavaScript",
-    url: "https://krystyna-lyn.github.io/coffee-web/"
-  },
-  {
-    id: 7,
-    title: "Travel Landing Page",
-    img: "/portfolio/project-8.png",
-    desc: "created using PHP",
-    url: "#"
-  },
+  
   {
     id: 8,
     title: "Hotel booking Website UI/UX",
@@ -114,10 +101,6 @@ const technologies = [
   {
     name: "JavaScript",
     icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
   },
   {
     name: "React JS",

@@ -23,11 +23,9 @@ const Navbar = () => {
             setActive("");
             window.scrollTo(0, 0)
           }}>
-          <p className='text-white text-[18px] font-bold cursor-pointer'>
-            Krys
-            <span className='sm:block hidden'> Lyn</span>
-          </p>
+            <img  className="w-[80px]" src='/logo.png' alt='Logo' />
         </Link>
+        
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((link) => (
             <li
