@@ -31,7 +31,7 @@ const items = [
     id: 1,
     title: "WaveTube Video App",
     img: "/portfolio/project-5.png",
-    desc: "created using React.js, MUI",
+    desc: "created using React JS, MUI",
     url: "https://wavetubevideos.netlify.app"
   },
 
@@ -40,23 +40,23 @@ const items = [
     title: "Music App",
     img: "/portfolio/project-1.png",
     desc: "created using HTML, CSS, JavaScript",
-    url: "https://krystyna-lyn.github.io/krystyna-music/"
+    url: "#"
 
   },
   {
     id: 3,
     title: "Green Camp UI/UX Website",
     img: "/portfolio/project-7.png",
-    desc: "created using React.js, Next.js, Tailwind CSS",
+    desc: "created using React JS Next JS Tailwind CSS",
     url: "https://greencamptravel.netlify.app/"
   },
 
   {
     id: 4,
-    title: "E-Commerce Website",
-    img: "/portfolio/project-4.png",
-    desc: "created using Angular, see code below",
-    url: "https://github.com/krystyna-lyn/nb-ks-shop"
+    title: "Spectrum AI",
+    img: "/portfolio/project-12.png",
+    desc: "created using React JS Tailwind CSS",
+    url: "https://spectrum-ai.netlify.app/"
   },
 
   {
@@ -73,7 +73,7 @@ const items = [
     desc: "created using PHP",
     url: "https://github.com/krystyna-lyn/coffeeshop"
   },
-  
+
   {
     id: 7,
     title: "Hotel booking Website UI/UX",
@@ -94,6 +94,13 @@ const items = [
     img: "/portfolio/project-9.png",
     desc: "created using React",
     url: "https://niceshoes.netlify.app"
+  },
+  {
+    id: 10,
+    title: "E-Commerce Website",
+    img: "/portfolio/project-4.png",
+    desc: "created using Angular, see code below",
+    url: "https://github.com/krystyna-lyn/nb-ks-shop"
   },
 
 ];

@@ -23,9 +23,10 @@ const Navbar = () => {
             setActive("");
             window.scrollTo(0, 0)
           }}>
-            <img  className="w-[80px]" src='/logo.png' alt='Logo' />
+          KRYS LYN
+          { /*<img  className="w-[80px]" src='/logo.png' alt='Logo' /> */}
         </Link>
-        
+
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((link) => (
             <li
