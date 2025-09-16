@@ -16,7 +16,7 @@ const App = () => {
           <Parallax type="portfolio" />
         </section>
         <Portfolio />
-       
+
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />

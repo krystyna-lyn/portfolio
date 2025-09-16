@@ -24,7 +24,7 @@ const Single = ({ item }) => {
           <motion.div className={`flex-1 flex flex-col gap-5 p-3 items-center text-center ${styles.tramsform}`}>
             <h2 className="text-[30px] sm:text-[40px]">{item.title}</h2>
             <p>{item.desc}</p>
-            <button className="bg-[#915EFF] border-none rounded-lg p-2 w-[200px] cursor-pointer">
+            <button className="bg-[#7b349e] border-none rounded-lg p-2 w-[200px] cursor-pointer">
               <a href={item.url} target="_blank">See now</a>
             </button>
           </motion.div>
