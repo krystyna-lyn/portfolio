@@ -15,7 +15,7 @@ const Single = ({ item }) => {
   const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
 
   return (
-    <section id="works" className="mt-32">
+    <section id="projects" className="mt-32">
       <div className="flex items-center justify-center size-full overflow-hidden">
         <div className="max-w-[1100px] h-full m-auto flex flex-col items-center justify-center gap-12 sm:flex-row">
           <div className="sm:flex-1 sm:h-[50%] w-full max-h-[300px]" ref={ref}>
@@ -51,7 +51,7 @@ const Portfolio = () => {
     <div className="relative" ref={ref}>
       <div className={`${styles.heroSubText} sticky top-0 left-0 pt-5 text-center`}>
 
-        <h1>Featured Works</h1>
+        <h1>Featured Projects</h1>
 
         <motion.div style={{ scaleX }} className="h-2 bg-white-200"></motion.div>
       </div>
