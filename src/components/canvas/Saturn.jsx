@@ -1,5 +1,6 @@
 import { Canvas, useLoader } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
+import SkyBox from "./SkyBox";
 import * as THREE from "three";
 
 const Saturn = () => {
@@ -17,7 +18,7 @@ const Saturn = () => {
 
 
     return (
-        <group scale={0.7} position={[3, 0, 0]}>
+        <group scale={0.5} position={[2, 0, 0]}>
             {/* Planet */}
             <mesh>
                 <sphereGeometry args={[1.5, 64, 64]} />
@@ -68,6 +69,14 @@ const Saturn = () => {
 const SaturnCanvas = () => {
     return (
         <Canvas
+            style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                zIndex: 0,
+            }}
             camera={{
                 fov: 45,
                 near: 0.1,
@@ -75,10 +84,16 @@ const SaturnCanvas = () => {
                 position: [-6, 5, 9],
             }}
         >
+            <SkyBox />
             <ambientLight intensity={0.6} />
             <directionalLight position={[5, 5, 5]} intensity={2} />
 
-            <OrbitControls autoRotate enableZoom={false} />
+            <OrbitControls
+                autoRotate
+                autoRotateSpeed={0.2}  //SPEED OF ROTATION
+                enableZoom={false}
+            />
+
             {/* 3d show case
 
 <OrbitControls
