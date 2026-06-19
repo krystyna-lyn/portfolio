@@ -32,11 +32,11 @@
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.violet-gradient {
-  background: #7b349e;
+.blue-gradient {
+  background: #5a8bda;
   background: linear-gradient(-90deg, #a0eabf 0%, rgba(60, 51, 80, 0) 100%);
   background: -webkit-linear-gradient(-90deg,
-      #7b349e 0%,
+      #5a8bda 0%,
       rgba(60, 51, 80, 0) 100%);
 }
 
