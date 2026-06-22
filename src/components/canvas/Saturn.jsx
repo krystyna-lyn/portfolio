@@ -18,7 +18,7 @@ const Saturn = () => {
 
 
     return (
-        <group scale={0.5} position={[2, 0, 0]}>
+        <group scale={0.5} position={[2, -2, 3]}>
             {/* Planet */}
             <mesh>
                 <sphereGeometry args={[1.5, 64, 64]} />

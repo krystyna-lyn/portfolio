@@ -51,7 +51,7 @@ const Portfolio = () => {
     <div className="relative" ref={ref}>
       <div className={`${styles.heroSubText} sticky top-0 left-0 pt-5 text-center`}>
 
-        <h1>Featured Projects</h1>
+        <h1 className="text-secondary">Featured Projects</h1>
 
         <motion.div style={{ scaleX }} className="h-2 bg-white-200"></motion.div>
       </div>
