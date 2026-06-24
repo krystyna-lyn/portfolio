@@ -2,8 +2,13 @@ import { Canvas, useLoader } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import SkyBox from "./SkyBox";
 import * as THREE from "three";
+import { useThree } from "@react-three/fiber";
 
 const Saturn = () => {
+    // mobile phone support
+    const { size } = useThree();
+
+    const mobile = size.width < 768;
 
     const texture = useLoader(
         THREE.TextureLoader,
@@ -16,10 +21,12 @@ const Saturn = () => {
     );
 
 
-
     return (
-        <group scale={0.5} position={[2, -2, 3]}>
-            {/* Planet */}
+
+        < group
+            scale={mobile ? 0.4 : 0.7}
+            position={mobile ? [1, 0, 0] : [0, -0.75, 3]}
+        >
             <mesh>
                 <sphereGeometry args={[1.5, 64, 64]} />
                 <meshStandardMaterial map={texture} />
@@ -62,7 +69,7 @@ const Saturn = () => {
                     side={THREE.BackSide}
                 />
             </mesh>
-        </group>
+        </group >
     );
 };
 
@@ -94,18 +101,7 @@ const SaturnCanvas = () => {
                 enableZoom={false}
             />
 
-            {/* 3d show case
 
-<OrbitControls
-  enableZoom={false}
-  autoRotate
-  autoRotateSpeed={0.6}
-  enablePan={false}
-  minPolarAngle={Math.PI / 2.2}
-  maxPolarAngle={Math.PI / 2.2}
-/>
-
-*/}
             <Saturn />
         </Canvas>
     );
