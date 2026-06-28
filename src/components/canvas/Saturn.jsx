@@ -24,7 +24,7 @@ const Saturn = () => {
     return (
 
         < group
-            scale={mobile ? 0.4 : 0.7}
+            scale={mobile ? 0.4 : 0.5}
             position={mobile ? [1, 0, 0] : [0, -0.75, 3]}
         >
             <mesh>

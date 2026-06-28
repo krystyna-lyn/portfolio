@@ -7,6 +7,8 @@ import { OrbitControls } from "@react-three/drei";
 const SkyBox = () => {
     const { scene } = useThree();
 
+
+
     useEffect(() => {
         const loader = new THREE.CubeTextureLoader();
 
