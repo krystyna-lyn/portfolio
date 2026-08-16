@@ -26,17 +26,24 @@ export const navLinks = [
 ];
 
 const items = [
-
   {
     id: 1,
-    title: "WaveTube Video App",
+    title: "E-commerce App",
+    img: "/portfolio/project-13.png",
+    desc: "created using React JS",
+    url: "https://kixsneaks.netlify.app"
+  },
+
+  {
+    id: 2,
+    title: "Video App",
     img: "/portfolio/project-5.png",
     desc: "created using React JS, MUI",
     url: "https://wavetubevideos.netlify.app"
   },
 
   {
-    id: 2,
+    id: 3,
     title: "Music App",
     img: "/portfolio/project-1.png",
     desc: "created using HTML, CSS, JavaScript",
@@ -44,16 +51,16 @@ const items = [
 
   },
   {
-    id: 3,
-    title: "E-Commerce Website",
+    id: 4,
+    title: "E-Commerce App",
     img: "/portfolio/project-4.png",
     desc: "created using Angular, see code below",
     url: "https://github.com/krystyna-lyn/nb-ks-shop"
   },
 
   {
-    id: 4,
-    title: "Spectrum AI",
+    id: 5,
+    title: "UI/UX SPA",
     img: "/portfolio/project-12.png",
     desc: "created using React JS Tailwind CSS",
     url: "https://spectrum-ai.netlify.app/"
@@ -61,8 +68,8 @@ const items = [
 
 
   {
-    id: 5,
-    title: "Coffee Shop Website",
+    id: 6,
+    title: "E-Commerce App",
     img: "/portfolio/project-6.png",
     desc: "created using PHP",
     url: "https://github.com/krystyna-lyn/coffeeshop"
