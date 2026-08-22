@@ -4,7 +4,7 @@ const tabs = {
     "App.jsx": [
         'const developer = {',
         '    name: "Krystyna",',
-        '    role: "Web Developer",',
+        '    role: "Web developer",',
         '    location: "Spain",',
         '};',
         '',
@@ -14,8 +14,8 @@ const tabs = {
     ],
     "Projects.jsx": [
         'const projects = [',
-        '    "KixSneaks",',
-        '    "Hotel Management",',
+        '    "E-commerce",',
+        '    "Video App",',
         '    "Web Projects",',
         '];',
         '',
@@ -25,7 +25,7 @@ const tabs = {
         'const contact = {',
         '    available: true,',
         '    location: "Spain",',
-        '    role: "Web Developer",',
+        '    role: "Web developer",',
         '};',
         '',
         'export default contact;',
@@ -82,8 +82,8 @@ const CodeBrowser = () => {
                             key={tab}
                             onClick={() => setActiveTab(tab)}
                             className={`relative whitespace-nowrap px-5 py-3 text-xs transition-colors duration-300 ${activeTab === tab
-                                    ? "text-blue-200"
-                                    : "text-blue-200/35 hover:text-blue-200/70"
+                                ? "text-blue-200"
+                                : "text-blue-200/35 hover:text-blue-200/70"
                                 }`}
                         >
                             {tab}
@@ -119,11 +119,11 @@ const CodeBrowser = () => {
                 {/* Bottom */}
                 <div className="flex items-center justify-between border-t border-blue-200/10 px-5 py-3">
                     <span className="text-[10px] tracking-wide text-blue-200/35">
-                        React · JavaScript
+
                     </span>
 
                     <span className="text-[10px] text-blue-200/60">
-                        Web Developer
+                        Web Development
                     </span>
                 </div>
             </div>

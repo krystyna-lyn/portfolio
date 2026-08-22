@@ -23,11 +23,11 @@ const About = () => {
               Hi, I'm <span className='text-[#5a8bda]'>Krystyna</span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              a web developer
+              Web Developer
             </p>
           </div>
         </div>
-        <div className="flex w-full justify-center lg:w-[52%] lg:justify-end">
+        <div className="flex w-full justify-center lg:w-[62%] lg:justify-end">
           <CodeBrowser />
         </div>
       </div>
