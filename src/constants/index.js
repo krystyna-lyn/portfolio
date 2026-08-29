@@ -73,6 +73,13 @@ const items = [
     img: "/portfolio/project-6.png",
     desc: "created using PHP",
     url: "https://github.com/krystyna-lyn/coffeeshop"
+  },
+  {
+    id: 7,
+    title: "E-Commerce App",
+    img: "/portfolio/project-2.png",
+    desc: "created using HTML, CSS, JavaScript",
+    url: "https://krystyna-lyn.github.io/e-shop"
   }
 
 ];
